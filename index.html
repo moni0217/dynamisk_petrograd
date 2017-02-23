@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Restaurant Petrograd</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -13,8 +15,23 @@
 
 <body>
     <!-- Navbar-->
-    <nav></nav>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Restaurant Petrograd</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Forretter</a></li>
+                <li><a href="#">Hovedretter</a></li>
+                <li><a href="#">Desserter</a></li>
+                <li><a href="#">Sideretter</a></li>
+                <li><a href="#">Drikkevarer</a></li>
+            </ul>
+        </div>
+    </nav>
     <!-- Navbar slut-->
+
     <!-- carousel-------------------------------------------------------->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -44,8 +61,10 @@
                 <img src="imgs/large/borsjtj.jpg" alt="Borsjtj">
             </div>
         </div>
+
         <div class="name_wrapper"></div>
         <h3 class="carouselName">Restaurant Petrograd</h3>
+
 
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -59,10 +78,20 @@
     </div>
     <!-- carousel slut------------------------------------------------->
 
-    <!------ forretter------------------------------------------------->
-    <h2 class="center">Forretter</h2>
-
+    <!---filtrering--->
+    <div class="container-fluid filter_wrapper">
+        <div class="row">
+            <p class="filter col-md-offset-7 col-md-1">Vælg filtre:</p>
+            <button class="filter col-md-1">vegetar</button>
+            <button class="filter col-md-1">alkohol</button>
+            <button class="filter col-md-1">allergi</button>
+            <button class="filter col-md-1">rabatpris</button>
+        </div>
+    </div>
+    <!--filtrering slut--->
     <div class="container-fluid">
+        <!------ forretter------------------------------------------------->
+        <h2 class="center">Forretter</h2>
         <div class="row produktliste">
             <!--her skal produkter lægges ind-->
 
