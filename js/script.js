@@ -56,6 +56,7 @@ function visProdukt(produkt) {
 
     //append klon til .produkt_liste
     document.querySelector(".produktliste").appendChild(klon);
+
     //tæller én op hver gang, den hr gennemgået et produkt
     produktIndex++;
 }
@@ -75,5 +76,16 @@ function modalKnapKlik(event) {
 function visModalProdukt(produkt) {
     console.log("vis modal for", produkt);
 
+    //find modal_template
+    var klon = document.querySelector("#modal_template").content.cloneNode(true);
 
+    //put data i klonen
+    klon.querySelector(".data_navn").innerHTML = produkt.navn;
+    klon.querySelector(".data_billede").src = "/imgs/medium/" + produkt.billede + "-md.jpg";
+
+    //sletter det der stod i modal-content
+    document.querySelector(".modal-content").innerHTML = "";
+
+    //append klon i modal-content
+    document.querySelector(".modal-content").appendChild(klon);
 }
