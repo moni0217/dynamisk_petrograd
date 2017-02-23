@@ -24,37 +24,21 @@ h4 {
     font-size: 0.8rem;
 }
 
-
-/*
-div {
-    border: solid black;
-}
-*/
-
-.pris,
-.udsolgt {
+.tekst_hoejre {
     text-align: right;
 }
 
-.vegetar-tekst {
-    position: relative;
-    left: -1vw;
-}
-
-.alkohol-tekst {
-    position: relative;
-    left: -1vw;
-}
-
+.vegetar-tekst,
+.alkohol-tekst,
 .allergi-tekst {
     position: relative;
     left: -1vw;
 }
 
-.border {
-    border: solid black;
-}
-
 .center {
     text-align: center;
+}
+
+.nypris {
+    color: green;
 }

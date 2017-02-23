@@ -66,36 +66,43 @@
         <div class="row">
 
             <!------ forret 1----------------->
-            <div class="col-md-offset-1 col-md-5 forret allergenret vegetarret">
-                <h3>Russisk ringbrød med vindruer</h3>
-                <!------ billed---------------->
-                <div class="row">
-                    <img class="img-responsive col-md-6" src="imgs/medium/ringbroed-druer-md.jpg" alt="Russisk ringbrød med vindruer">
-                    <!------ ikoner------------>
-                    <div class="row col-md-6">
-                        <img class="vegetar ikon img-responsive col-md-offset-6 col-md-2" src="icons/vegetar.png" alt="vegetar">
-                        <img class="alkohol ikon img-responsive col-md-2" src="icons/alkohol.png" alt="alkohol">
-                        <img class="allergi ikon img-responsive col-md-2" src="icons/allergi.png" alt="allergi">
+            <template class="produkt_template">
+                <div class="col-md-offset-1 col-md-5 forret allergenret vegetarret">
+                    <h3 class="data_navn">DATA_NAVN</h3>
+                    <!------ billed---------------->
+                    <div class="row">
+                        <img class="data_billede img-responsive col-md-6" src="imgs/medium/ringbroed-druer-md.jpg" alt="Russisk ringbrød med vindruer">
+                        <!------ ikoner------------>
+                        <div class="row col-md-6">
+                            <img class="vegetar ikon img-responsive col-md-offset-6 col-md-2" src="icons/vegetar.png" alt="vegetar">
+                            <!--TO DO: fjern class ikon og vegetar når den kke skal vises--->
+                            <img class="alkohol ikon img-responsive col-md-2" src="icons/alkohol.png" alt="alkohol">
+                            <!--TO DO: fjern class ikon og alkohol når den kke skal vises--->
+                            <img class="allergi ikon img-responsive col-md-2" src="icons/allergi.png" alt="allergi">
+                            <!--TO DO: fjern class ikon og allergi når den kke skal vises--->
+                        </div>
+                        <div class="kort_beskrivelse row col-md-6">
+                            <h4 class="ikon_tekst vegetar-tekst col-md-offset-6 col-md-2">VEGETAR</h4>
+                            <!--TO DO: fjern class ikon-tekst og vegetar-tekst når den kke skal vises--->
+                            <h4 class="ikon_tekst alkohol-tekst col-md-2">ALKOHOL</h4>
+                            <!--TO DO: fjern class ikon-tekst og alkohol-tekst når den kke skal vises--->
+                            <h4 class="data_allergener ikon_tekst allergi-tekst col-md-2">DATA_ALLERGENER</h4>
+                            <!--TO DO: fjern class ikon-tekst og allergi-tekst når den kke skal vises--->
+                        </div>
+                        <!------ pris-------------->
+                        <div class="kort_beskrivelse row col-md-6">
+                            <p class="tekst_hoejre"><s>Pris: <span class="data_pris">DATA_PRIS</span> kr.</s></p>
+                            <!--TO DO: sæt class rabatpris ved rabat eller udsolgt-->
+                            <p class="tekst_hoejre nypris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span> kr.</p>
+                            <!--skal kun vises ved rabat-->
+                            <p class="tekst_hoejre udsolgt">Denne ret er desværre udsolgt!</p>
+                            <!---SKAL KUN VISES VED UDSOLGT--->
+                        </div>
+                        <!--------- modal knap--------------->
+                        <button type="button" class="col-md-6 btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Læs mere</button>
                     </div>
-                    <div class="kort_beskrivelse row col-md-6">
-                        <h4 class="ikon_tekst vegetar-tekst col-md-offset-6 col-md-2">VEGETAR</h4>
-                        <h4 class="ikon_tekst alkohol-tekst col-md-2">ALKOHOL</h4>
-                        <h4 class="ikon_tekst allergi-tekst col-md-2">LAKTOSE</h4>
-                    </div>
-                    <!------ kort beskrivelse---------------->
-                    <div class="kort_beskrivelse row col-md-6">
-                        <p>Russisk ringbrød af Karapatisk mel</p>
-                    </div>
-                    <!------ pris-------------->
-                    <div class="kort_beskrivelse row col-md-6">
-                        <p class="pris rabatpris"><s>Pris: 39 kr.</s></p>
-                        <p class="pris nypris">19,50 kr.</p>
-                        <p class="udsolgt">Denne ret er desværre udsolgt!</p>
-                    </div>
-                    <!--------- modal knap--------------->
-                    <button type="button" class="col-md-6 btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Læs mere</button>
                 </div>
-            </div>
+            </template>
 
             <!------ forret1 slut---------------------->
             <!------ forret2------------------>
