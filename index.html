@@ -63,10 +63,11 @@
     <h2 class="center">Forretter</h2>
 
     <div class="container-fluid">
-        <div class="row">
+        <div class="row produktliste">
+            <!--her skal produkter lægges ind-->
 
             <!------ forret 1----------------->
-            <template class="produkt_template">
+            <template id="produkt_template">
                 <div class="col-md-offset-1 col-md-5 forret allergenret vegetarret">
                     <h3 class="data_navn">DATA_NAVN</h3>
                     <!------ billed---------------->
@@ -105,113 +106,18 @@
             </template>
 
             <!------ forret1 slut---------------------->
-            <!------ forret2------------------>
-            <div class="col-md-5 forret allergenret vegetarret">
-                <h3>Russisk ringbrød med vindruer</h3>
-                <!------ billed---------------->
-                <div class="row">
-                    <img class="img-responsive col-md-6" src="imgs/medium/ringbroed-druer-md.jpg" alt="Russisk ringbrød med vindruer">
-                    <!------ ikoner------------>
-                    <div class="row col-md-6">
-                        <img class="vegetar ikon img-responsive col-md-offset-6 col-md-2" src="icons/vegetar.png" alt="vegetar">
-                        <img class="alkohol ikon img-responsive col-md-2" src="icons/alkohol.png" alt="alkohol">
-                        <img class="allergi ikon img-responsive col-md-2" src="icons/allergi.png" alt="allergi">
-                    </div>
-                    <div class="kort_beskrivelse row col-md-6">
-                        <h4 class="ikon_tekst vegetar-tekst col-md-offset-6 col-md-2">VEGETAR</h4>
-                        <h4 class="ikon_tekst alkohol-tekst col-md-2">ALKOHOL</h4>
-                        <h4 class="ikon_tekst allergi-tekst col-md-2">LAKTOSE</h4>
-                    </div>
-                    <!------ kort beskrivelse---------------->
-                    <div class="kort_beskrivelse row col-md-6">
-                        <p>Russisk ringbrød af Karapatisk mel</p>
-                    </div>
-                    <!------ pris-------------->
-                    <div class="kort_beskrivelse row col-md-6">
-                        <p class="pris rabatpris"><s>Pris: 39 kr.</s></p>
-                        <p class="pris nypris">19,50 kr.</p>
-                        <p class="udsolgt">Denne ret er desværre udsolgt!</p>
-                    </div>
-                    <!--------- modal knap--------------->
-                    <button type="button" class="col-md-6 btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Læs mere</button>
-                </div>
-            </div>
+
         </div>
-        <!------ forret2 slut-------------------------------->
-        <div class="container-fluid">
-            <div class="row">
-                <!------ forret 3----------------->
-                <div class="col-md-offset-1 col-md-5 forret allergenret vegetarret">
-                    <h3>Russisk ringbrød med vindruer</h3>
-                    <!------ billed---------------->
-                    <div class="row">
-                        <img class="img-responsive col-md-6" src="imgs/medium/ringbroed-druer-md.jpg" alt="Russisk ringbrød med vindruer">
-                        <!------ ikoner------------>
-                        <div class="row col-md-6">
-                            <img class="vegetar ikon img-responsive col-md-offset-6 col-md-2" src="icons/vegetar.png" alt="vegetar">
-                            <img class="alkohol ikon img-responsive col-md-2" src="icons/alkohol.png" alt="alkohol">
-                            <img class="allergi ikon img-responsive col-md-2" src="icons/allergi.png" alt="allergi">
-                        </div>
-                        <div class="kort_beskrivelse row col-md-6">
-                            <h4 class="ikon_tekst vegetar-tekst col-md-offset-6 col-md-2">VEGETAR</h4>
-                            <h4 class="ikon_tekst alkohol-tekst col-md-2">ALKOHOL</h4>
-                            <h4 class="ikon_tekst allergi-tekst col-md-2">LAKTOSE</h4>
-                        </div>
-                        <!------ kort beskrivelse---------------->
-                        <div class="kort_beskrivelse row col-md-6">
-                            <p>Russisk ringbrød af Karapatisk mel</p>
-                        </div>
-                        <!------ pris-------------->
-                        <div class="kort_beskrivelse row col-md-6">
-                            <p class="pris rabatpris"><s>Pris: 39 kr.</s></p>
-                            <p class="pris nypris">19,50 kr.</p>
-                            <p class="udsolgt">Denne ret er desværre udsolgt!</p>
-                        </div>
-                        <!--------- modal knap--------------->
-                        <button type="button" class="col-md-6 btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Læs mere</button>
-                    </div>
-                </div>
-                <!------ forret3 slut---------------------->
-                <!------ forret4------------------>
-                <div class="col-md-5 forret allergenret vegetarret">
-                    <h3>Russisk ringbrød med vindruer</h3>
-                    <!------ billed---------------->
-                    <div class="row">
-                        <img class="img-responsive col-md-6" src="imgs/medium/ringbroed-druer-md.jpg" alt="Russisk ringbrød med vindruer">
-                        <!------ ikoner------------>
-                        <div class="row col-md-6">
-                            <img class="vegetar ikon img-responsive col-md-offset-6 col-md-2" src="icons/vegetar.png" alt="vegetar">
-                            <img class="alkohol ikon img-responsive col-md-2" src="icons/alkohol.png" alt="alkohol">
-                            <img class="allergi ikon img-responsive col-md-2" src="icons/allergi.png" alt="allergi">
-                        </div>
-                        <div class="kort_beskrivelse row col-md-6">
-                            <h4 class="ikon_tekst vegetar-tekst col-md-offset-6 col-md-2">VEGETAR</h4>
-                            <h4 class="ikon_tekst alkohol-tekst col-md-2">ALKOHOL</h4>
-                            <h4 class="ikon_tekst allergi-tekst col-md-2">LAKTOSE</h4>
-                        </div>
-                        <!------ kort beskrivelse---------------->
-                        <div class="kort_beskrivelse row col-md-6">
-                            <p>Russisk ringbrød af Karapatisk mel</p>
-                        </div>
-                        <!------ pris-------------->
-                        <div class="kort_beskrivelse row col-md-6">
-                            <p class="pris rabatpris"><s>Pris: 39 kr.</s></p>
-                            <p class="pris nypris">19,50 kr.</p>
-                            <p class="udsolgt">Denne ret er desværre udsolgt!</p>
-                        </div>
-                        <!--------- modal knap--------------->
-                        <button type="button" class="col-md-6 btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Læs mere</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!------ forret4 slut------------------------------------------------->
-        <!------ forretter slut------------------------------------------------->
-        <!-- jQuery Version 1.11.1 -->
-        <script src="js/jquery.js"></script>
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
+    </div>
+
+
+    <!------ forret4 slut------------------------------------------------->
+    <!------ forretter slut------------------------------------------------->
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
