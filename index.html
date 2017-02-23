@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant Petrograd</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar-->
+    <nav></nav>
+    <!-- Navbar slut-->
+    <!-- carousel-------------------------------------------------------->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+                <img src="imgs/large/syltedeloeg.jpg" alt="Syltede løg">
+            </div>
+
+            <div class="item">
+                <img src="imgs/large/pavlova.jpg" alt="Pavlova">
+            </div>
+
+            <div class="item">
+                <img src="imgs/large/kirgisiskroulade.jpg" alt="Kirgisk roulade">
+            </div>
+
+            <div class="item">
+                <img src="imgs/large/borsjtj.jpg" alt="Borsjtj">
+            </div>
+        </div>
+        <div class="name_wrapper"></div>
+        <h3 class="carouselName">Restaurant Petrograd</h3>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- carousel slut------------------------------------------------->
+
+    <!------ forretter------------------------------------------------->
+    <h2 class="center">Forretter</h2>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!------ forret 1----------------->
+            <div class="col-md-offset-1 col-md-5 forret allergenret vegetarret">
+                <h3>Russisk ringbrød med vindruer</h3>
+                <!------ billed---------------->
+                <div class="row">
+                    <img class="img-responsive col-md-6" src="imgs/medium/ringbroed-druer-md.jpg" alt="Russisk ringbrød med vindruer">
+                    <!------ ikoner------------>
+                    <div class="row col-md-6">
+                        <img class="vegetar ikon img-responsive col-md-offset-6 col-md-2" src="icons/vegetar.png" alt="vegetar">
+                        <img class="alkohol ikon img-responsive col-md-2" src="icons/alkohol.png" alt="alkohol">
+                        <img class="allergi ikon img-responsive col-md-2" src="icons/allergi.png" alt="allergi">
+                    </div>
+                    <div class="kort_beskrivelse row col-md-6">
+                        <h4 class="ikon_tekst vegetar-tekst col-md-offset-6 col-md-2">VEGETAR</h4>
+                        <h4 class="ikon_tekst alkohol-tekst col-md-2">ALKOHOL</h4>
+                        <h4 class="ikon_tekst allergi-tekst col-md-2">LAKTOSE</h4>
+                    </div>
+                    <!------ kort beskrivelse---------------->
+                    <div class="kort_beskrivelse row col-md-6">
+                        <p>Russisk ringbrød af Karapatisk mel</p>
+                    </div>
+                    <!------ pris-------------->
+                    <div class="kort_beskrivelse row col-md-6">
+                        <p class="pris rabatpris"><s>Pris: 39 kr.</s></p>
+                        <p class="pris nypris">19,50 kr.</p>
+                        <p class="udsolgt">Denne ret er desværre udsolgt!</p>
+                    </div>
+                    <!--------- modal knap--------------->
+                    <button type="button" class="col-md-6 btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Læs mere</button>
+
+                    <!-- Modal forret 1 -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel1">Beskrivelse</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Russisk ringbrød med vindruer</h3>
+                                    <img class="img-responsive col-md-6" src="imgs/medium/ringbroed-druer-md.jpg" alt="Russisk ringbrød med vindruer">
+                                    <p>Russisk ringbrød efter en klassisk opskrift fra Karapatien. Dejen blandes koldhæver 30 dage, inde brødet bages over bål. Meget sprødt, godt med Karapatisk bjerggedsmør.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------ forret1 slut---------------------->
+            <!------ forret2------------------>
+            <div class="col-md-5 forret allergenret vegetarret">
+                <h3>Russisk ringbrød med vindruer</h3>
+                <!------ billed---------------->
+                <div class="row">
+                    <img class="img-responsive col-md-6" src="imgs/medium/ringbroed-druer-md.jpg" alt="Russisk ringbrød med vindruer">
+                    <!------ ikoner------------>
+                    <div class="row col-md-6">
+                        <img class="vegetar ikon img-responsive col-md-offset-6 col-md-2" src="icons/vegetar.png" alt="vegetar">
+                        <img class="alkohol ikon img-responsive col-md-2" src="icons/alkohol.png" alt="alkohol">
+                        <img class="allergi ikon img-responsive col-md-2" src="icons/allergi.png" alt="allergi">
+                    </div>
+                    <div class="kort_beskrivelse row col-md-6">
+                        <h4 class="ikon_tekst vegetar-tekst col-md-offset-6 col-md-2">VEGETAR</h4>
+                        <h4 class="ikon_tekst alkohol-tekst col-md-2">ALKOHOL</h4>
+                        <h4 class="ikon_tekst allergi-tekst col-md-2">LAKTOSE</h4>
+                    </div>
+                    <!------ kort beskrivelse---------------->
+                    <div class="kort_beskrivelse row col-md-6">
+                        <p>Russisk ringbrød af Karapatisk mel</p>
+                    </div>
+                    <!------ pris-------------->
+                    <div class="kort_beskrivelse row col-md-6">
+                        <p class="pris rabatpris"><s>Pris: 39 kr.</s></p>
+                        <p class="pris nypris">19,50 kr.</p>
+                        <p class="udsolgt">Denne ret er desværre udsolgt!</p>
+                    </div>
+                    <!--------- modal knap--------------->
+                    <button type="button" class="col-md-6 btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Læs mere</button>
+
+                    <!-- Modal forret 2 -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel2">Beskrivelse</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Russisk ringbrød med vindruer</h3>
+                                    <img class="img-responsive col-md-6" src="imgs/medium/ringbroed-druer-md.jpg" alt="Russisk ringbrød med vindruer">
+                                    <p>Russisk ringbrød efter en klassisk opskrift fra Karapatien. Dejen blandes koldhæver 30 dage, inde brødet bages over bål. Meget sprødt, godt med Karapatisk bjerggedsmør.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------ forret2 slut-------------------------------->
+    <div class="container-fluid">
+        <div class="row">
+            <!------ forret 3----------------->
+            <div class="col-md-offset-1 col-md-5 forret allergenret vegetarret">
+                <h3>Russisk ringbrød med vindruer</h3>
+                <!------ billed---------------->
+                <div class="row">
+                    <img class="img-responsive col-md-6" src="imgs/medium/ringbroed-druer-md.jpg" alt="Russisk ringbrød med vindruer">
+                    <!------ ikoner------------>
+                    <div class="row col-md-6">
+                        <img class="vegetar ikon img-responsive col-md-offset-6 col-md-2" src="icons/vegetar.png" alt="vegetar">
+                        <img class="alkohol ikon img-responsive col-md-2" src="icons/alkohol.png" alt="alkohol">
+                        <img class="allergi ikon img-responsive col-md-2" src="icons/allergi.png" alt="allergi">
+                    </div>
+                    <div class="kort_beskrivelse row col-md-6">
+                        <h4 class="ikon_tekst vegetar-tekst col-md-offset-6 col-md-2">VEGETAR</h4>
+                        <h4 class="ikon_tekst alkohol-tekst col-md-2">ALKOHOL</h4>
+                        <h4 class="ikon_tekst allergi-tekst col-md-2">LAKTOSE</h4>
+                    </div>
+                    <!------ kort beskrivelse---------------->
+                    <div class="kort_beskrivelse row col-md-6">
+                        <p>Russisk ringbrød af Karapatisk mel</p>
+                    </div>
+                    <!------ pris-------------->
+                    <div class="kort_beskrivelse row col-md-6">
+                        <p class="pris rabatpris"><s>Pris: 39 kr.</s></p>
+                        <p class="pris nypris">19,50 kr.</p>
+                        <p class="udsolgt">Denne ret er desværre udsolgt!</p>
+                    </div>
+                    <!--------- modal knap--------------->
+                    <button type="button" class="col-md-6 btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Læs mere</button>
+
+                    <!-- Modal forret 3 -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel3">Beskrivelse</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Russisk ringbrød med vindruer</h3>
+                                    <img class="img-responsive col-md-6" src="imgs/medium/ringbroed-druer-md.jpg" alt="Russisk ringbrød med vindruer">
+                                    <p>Russisk ringbrød efter en klassisk opskrift fra Karapatien. Dejen blandes koldhæver 30 dage, inde brødet bages over bål. Meget sprødt, godt med Karapatisk bjerggedsmør.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------ forret3 slut---------------------->
+            <!------ forret4------------------>
+            <div class="col-md-5 forret allergenret vegetarret">
+                <h3>Russisk ringbrød med vindruer</h3>
+                <!------ billed---------------->
+                <div class="row">
+                    <img class="img-responsive col-md-6" src="imgs/medium/ringbroed-druer-md.jpg" alt="Russisk ringbrød med vindruer">
+                    <!------ ikoner------------>
+                    <div class="row col-md-6">
+                        <img class="vegetar ikon img-responsive col-md-offset-6 col-md-2" src="icons/vegetar.png" alt="vegetar">
+                        <img class="alkohol ikon img-responsive col-md-2" src="icons/alkohol.png" alt="alkohol">
+                        <img class="allergi ikon img-responsive col-md-2" src="icons/allergi.png" alt="allergi">
+                    </div>
+                    <div class="kort_beskrivelse row col-md-6">
+                        <h4 class="ikon_tekst vegetar-tekst col-md-offset-6 col-md-2">VEGETAR</h4>
+                        <h4 class="ikon_tekst alkohol-tekst col-md-2">ALKOHOL</h4>
+                        <h4 class="ikon_tekst allergi-tekst col-md-2">LAKTOSE</h4>
+                    </div>
+                    <!------ kort beskrivelse---------------->
+                    <div class="kort_beskrivelse row col-md-6">
+                        <p>Russisk ringbrød af Karapatisk mel</p>
+                    </div>
+                    <!------ pris-------------->
+                    <div class="kort_beskrivelse row col-md-6">
+                        <p class="pris rabatpris"><s>Pris: 39 kr.</s></p>
+                        <p class="pris nypris">19,50 kr.</p>
+                        <p class="udsolgt">Denne ret er desværre udsolgt!</p>
+                    </div>
+                    <!--------- modal knap--------------->
+                    <button type="button" class="col-md-6 btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Læs mere</button>
+
+                    <!-- Modal forret 4 -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel4">Beskrivelse</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Russisk ringbrød med vindruer</h3>
+                                    <img class="img-responsive col-md-6" src="imgs/medium/ringbroed-druer-md.jpg" alt="Russisk ringbrød med vindruer">
+                                    <p>Russisk ringbrød efter en klassisk opskrift fra Karapatien. Dejen blandes koldhæver 30 dage, inde brødet bages over bål. Meget sprødt, godt med Karapatisk bjerggedsmør.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------ forret4 slut------------------------------------------------->
+    <!------ forretter slut------------------------------------------------->
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

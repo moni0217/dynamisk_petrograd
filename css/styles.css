@@ -1,0 +1,60 @@
+#myCarousel,
+.carousel-inner {
+    width: 100vw;
+    height: 49vw;
+}
+
+.carouselName {
+    position: relative;
+    top: -39vw;
+    text-align: center;
+    color: #000;
+}
+
+.name_wrapper {
+    background-color: #ffffff;
+    width: 40vw;
+    height: 10vw;
+    position: relative;
+    top: -32vw;
+    margin: auto;
+}
+
+h4 {
+    font-size: 0.8rem;
+}
+
+
+/*
+div {
+    border: solid black;
+}
+*/
+
+.pris,
+.udsolgt {
+    text-align: right;
+}
+
+.vegetar-tekst {
+    position: relative;
+    left: -1vw;
+}
+
+.alkohol-tekst {
+    position: relative;
+    left: -1vw;
+}
+
+.allergi-tekst {
+    position: relative;
+    left: -1vw;
+}
+
+.border {
+    border: solid black;
+}
+
+.center {
+    text-align: center;
+}
