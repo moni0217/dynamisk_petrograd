@@ -82,6 +82,8 @@ function visModalProdukt(produkt) {
     //put data i klonen
     klon.querySelector(".data_navn").innerHTML = produkt.navn;
     klon.querySelector(".data_billede").src = "/imgs/medium/" + produkt.billede + "-md.jpg";
+    klon.querySelector(".data_lang_beskrivelse").innerHTML = produkt.langbeskrivelse;
+
 
     //sletter det der stod i modal-content
     document.querySelector(".modal-content").innerHTML = "";
