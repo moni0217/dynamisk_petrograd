@@ -46,3 +46,7 @@ h4 {
 .index {
     min-height: 300px;
 }
+
+.udsolgt {
+    text-decoration: line-through;
+}
