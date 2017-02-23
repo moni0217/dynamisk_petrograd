@@ -42,3 +42,7 @@ h4 {
 .nypris {
     color: green;
 }
+
+.index {
+    min-height: 300px;
+}
