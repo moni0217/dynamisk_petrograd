@@ -10,8 +10,13 @@ function sidenVises() {
 
 function visProduktListe(listen) {
     console.table(listen);
+
+    //filtrer udsolgte produkter fra
+    listen = listen.filter(produkt => !produkt.udsolgt);
+
     listen.forEach(visProdukt);
 }
+
 var produktIndex = 0;
 
 function visProdukt(produkt) {
