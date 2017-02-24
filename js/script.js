@@ -6,15 +6,73 @@ function sidenVises() {
     produktIndex = 0;
     // læs produktliste
     $.getJSON("http://petlatkea.dk/2017/dui/api/productlist?callback=?", visProduktListe);
+
+    document.querySelector(".filter_vegetar").addEventListener("click", filtrerVegetar);
+    document.querySelector(".filter_ikkevegetar").addEventListener("click", filtrerIkkeVegetar);
+    document.querySelector(".filter_alkohol").addEventListener("click", filtrerAlkohol);
+    document.querySelector(".filter_rabat").addEventListener("click", filtrerTilbud);
 }
+
+function filtrerVegetar(event) {
+    console.log("klik på vegetar-filter");
+
+    //find alle ikke-vegetarprodukter
+    var liste = document.querySelectorAll(".produkt:not(.vegetar)");
+
+    //skjul dem - tilføj klassen 'hide'
+    liste.forEach(div => div.classList.toggle("hide"));
+
+    event.preventDefault;
+}
+
+function filtrerIkkeVegetar(event) {
+    console.log("klik på ikke-vegetar-filter");
+
+    //find alle ikke-vegetarprodukter
+    var liste = document.querySelectorAll(".produkt:not(.ikke-vegetar)");
+
+    //skjul dem - tilføj klassen 'hide'
+    liste.forEach(div => div.classList.toggle("hide"));
+
+    event.preventDefault;
+}
+
+function filtrerAlkohol(event) {
+    console.log("klik på alkohol-filter");
+
+    //find alle ikke-alkohol produkter
+    var liste = document.querySelectorAll(".produkt:not(.alkohol)");
+
+    //skjul dem - tilføj klassen 'hide'
+    liste.forEach(div => div.classList.toggle("hide"));
+
+    event.preventDefault;
+}
+
+function filtrerTilbud(event) {
+    console.log("klik på tilbud-filter");
+
+    //find alle ikke-alkohol produkter
+    var liste = document.querySelectorAll(".produkt:not(.tilbud)");
+
+    //skjul dem - tilføj klassen 'hide'
+    liste.forEach(div => div.classList.toggle("hide"));
+
+    event.preventDefault;
+}
+
+
+
+
 
 function visProduktListe(listen) {
     console.table(listen);
 
     //filtrer udsolgte produkter fra
-    listen = listen.filter(produkt => !produkt.udsolgt);
+    // listen = listen.filter(produkt => !produkt.udsolgt);
 
     listen.forEach(visProdukt);
+
 }
 
 var produktIndex = 0;
@@ -27,6 +85,24 @@ function visProdukt(produkt) {
     if (produktIndex % 2 == 0) {
         klon.querySelector(".index").classList.add("col-sm-offset-1");
     }
+
+    //add'er en vegetar class til alle retter der er vegetaregnede
+    if (produkt.vegetar == true) {
+        klon.querySelector(".produkt").classList.add("vegetar");
+    }
+    //add'er en tilbuds class til alle retter der er på tilbud
+    if (produkt.rabatsats > 0) {
+        klon.querySelector(".produkt").classList.add("tilbud");
+    }
+
+    if (produkt.alkoholprocent > 0) {
+        klon.querySelector(".produkt").classList.add("alkohol");
+    }
+
+    if (produkt.vegetar == false) {
+        klon.querySelector(".produkt").classList.add("ikke-vegetar");
+    }
+
 
     //indsæt data i klon
     klon.querySelector(".data_navn").innerHTML = produkt.navn;
@@ -62,7 +138,7 @@ function visProdukt(produkt) {
     //append klon til .produkt_liste
     document.querySelector(".produktliste").appendChild(klon);
 
-    //tæller én op hver gang, den hr gennemgået et produkt
+    //tæller én op hver gang, den har gennemgået et produkt
     produktIndex++;
 }
 

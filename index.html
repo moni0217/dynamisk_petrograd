@@ -82,10 +82,10 @@
     <div class="container-fluid filter_wrapper">
         <div class="row">
             <p class="filter col-md-offset-7 col-md-1">Vælg filtre:</p>
-            <button class="filter col-md-1">vegetar</button>
-            <button class="filter col-md-1">alkohol</button>
-            <button class="filter col-md-1">allergi</button>
-            <button class="filter col-md-1">rabatpris</button>
+            <button class="filter filter_vegetar col-md-1">vegetar</button>
+            <button class="filter filter_ikkevegetar col-md-1">ikke vegetar</button>
+            <button class="filter filter_alkohol col-md-1">alkohol</button>
+            <button class="filter filter_rabat col-md-1">på tilbud</button>
         </div>
     </div>
     <!--filtrering slut--->
@@ -97,7 +97,7 @@
 
             <!------ forret 1----------------->
             <template id="produkt_template">
-                <div class="index col-md-5 forret allergenret vegetarret">
+                <div class="index col-md-5 produkt">
                     <h3 class="data_navn">DATA_NAVN</h3>
                     <!------ billed---------------->
                     <div class="row">
