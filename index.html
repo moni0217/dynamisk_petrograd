@@ -92,10 +92,10 @@
     <div class="container-fluid">
         <!------ forretter------------------------------------------------->
         <h2 class="center">Forretter</h2>
-        <div class="row produktliste">
+        <div class="row produktliste forretliste">
             <!--her skal produkter lægges ind-->
 
-            <!------ forret 1----------------->
+            <!------ produkt template----------------->
             <template id="produkt_template">
                 <div class="index col-md-5 produkt">
                     <h3 class="data_navn">DATA_NAVN</h3>
@@ -131,14 +131,45 @@
                         <!--------- modal knap--------------->
                         <button type="button" class="modalknap col-md-6 btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Læs mere</button>
                     </div>
+                    <!--------- modal knap slut--------------->
                 </div>
             </template>
 
-            <!------ forret1 slut---------------------->
-
+            <!------ produkt template slut---------------------->
         </div>
     </div>
     <!------ forretter slut------------------------------------------------->
+
+
+    <div class="container-fluid">
+        <!------ hovedretter------------------------------------------------->
+        <h2 class="center">Hovedretter</h2>
+        <div class="row produktliste hovedretliste">
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <!------ sideorders------------------------------------------------->
+        <h2 class="center">Sideorders</h2>
+        <div class="row produktliste sideorderliste">
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <!------ desserter------------------------------------------------->
+        <h2 class="center">Desserter</h2>
+        <div class="row produktliste dessertliste">
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <!------ drikkevarer------------------------------------------------->
+        <h2 class="center">Drikkevarer</h2>
+        <div class="row produktliste drikkevareliste">
+        </div>
+    </div>
+
+
     <!---modalboks start--->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
         <div class="modal-dialog" role="document">
@@ -147,7 +178,7 @@
         </div>
     </div>
     <!--modalboks slut--->
-    <!---moalboks template start--->
+    <!---modalboks template start--->
     <template id="modal_template">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>

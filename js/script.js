@@ -25,10 +25,11 @@ function filtrerVegetar(event) {
     event.preventDefault;
 }
 
+
 function filtrerIkkeVegetar(event) {
     console.log("klik på ikke-vegetar-filter");
 
-    //find alle ikke-vegetarprodukter
+    //find alle vegetarprodukter
     var liste = document.querySelectorAll(".produkt:not(.ikke-vegetar)");
 
     //skjul dem - tilføj klassen 'hide'
@@ -52,7 +53,7 @@ function filtrerAlkohol(event) {
 function filtrerTilbud(event) {
     console.log("klik på tilbud-filter");
 
-    //find alle ikke-alkohol produkter
+    //find alle ikke-tilbud produkter
     var liste = document.querySelectorAll(".produkt:not(.tilbud)");
 
     //skjul dem - tilføj klassen 'hide'
@@ -60,9 +61,6 @@ function filtrerTilbud(event) {
 
     event.preventDefault;
 }
-
-
-
 
 
 function visProduktListe(listen) {
@@ -122,6 +120,8 @@ function visProdukt(produkt) {
         klon.querySelector(".pris").classList.add("udsolgt");
     }
 
+
+
     if (produkt.udsolgt == true || produkt.rabatsats == 0) {
         //der er ikke rabat, rabat-prisen skal fjernes
         var rabatpris = klon.querySelector(".rabatpris");
@@ -135,8 +135,24 @@ function visProdukt(produkt) {
     //tilføj produkt id til modalknap
     klon.querySelector(".modalknap").dataset.produkt = produkt.id;
 
+
+    //append klon til forskellige lister
+    if (produkt.kategori == "forretter") {
+        document.querySelector(".forretliste").appendChild(klon);
+    } else if (produkt.kategori == "hovedretter") {
+        document.querySelector(".hovedretliste").appendChild(klon);
+    } else if (produkt.kategori == "desserter") {
+        document.querySelector(".dessertliste").appendChild(klon);
+    } else if (produkt.kategori == "drikkevarer") {
+        document.querySelector(".drikkevareliste").appendChild(klon);
+    } else if (produkt.kategori == "sideorders") {
+        document.querySelector(".sideorderliste").appendChild(klon);
+    }
+
+
+
     //append klon til .produkt_liste
-    document.querySelector(".produktliste").appendChild(klon);
+    //    document.querySelector(".produktliste").appendChild(klon);
 
     //tæller én op hver gang, den har gennemgået et produkt
     produktIndex++;
